@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+    color: rgba(0, 0, 0);
+}
+.head-list{height: 120px;
+}
+#header { 
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pexels-alexfu-2967770.jpg);
+    background-size: cover;
+    background-position:center bottom ;
+}
+.container {
+    padding:10px 10%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .logo {
+    width: 200px;
+    align-self: start;
+ }
+ nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+ }
+
+nav ul li a {
+   color: white;
+   text-align: none;
+   font-size: 18px;
+   position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0%;
+    height:3px;
+    background: lightgreen;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+main {
+    color: rgb(205, 255, 144);
+    font-family:'Courier New', Courier, monospace ;
+    margin-top: 120px; /* Adjust this value as needed */
+    text-align: center; /* Ensure text is centered */
+}
+#earn-button{
+    display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: darkgreen;
+            border: none;
+            border-radius: 5px;
+
+}
+
+/* CO2 page*/
+#CO2{
+    background-color: darkgreen;
+    align-items: center;
+}
+
+/*--------------Attention page----------*/
+#Attention { 
+    padding: 30px;
+    height: 170vh;
+    background-color: rgb(190, 232, 190);
+}
+.attention-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color: white;
+}
+.attention-list div{
+    background-color:rgba(0, 92, 53, 0.9);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s, max-height 0.5s, padding 0.5s;
+    overflow: hidden;
+    max-height: 500px;
+    cursor: pointer;
+}
+.attention-list div.expanded {
+    max-height: 10000px; /* adjust as needed */
+    padding: 20px;
+}
+.attention-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.attention-list div h2{
+    font-size: 30px;
+    font-weight: 500 ;
+    margin-bottom: 15px;
+}
+.attention-list div a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.attention-list div:hover{
+    background: lightgreen;
+    transform: translateY(-10px);
+}
+.sub-title{
+    color: darkgreen;
+    position: relative;
+    font-size: 50px;
+    font-family: DomaineDisplay, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+#change-world {
+    color: white;
+}
+/*------------------------ calc  C programme-----------------------*/
+#calc{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    padding: 130px;
+}
+.container2{
+    background-color: rgb(177, 201, 166) ;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    max-width: 80%; /* Adjust this value to make the box wider */
+    width: 100%;
+}
+.sub-title2{
+    color: grey;
+}
+.container3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.container3 div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+.calc-list div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.calc-list div h2{
+    font-size: 30px;
+    font-weight: 500 ;
+    margin-bottom: 15px;
+}
+.calc-list div a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.sub-title2{ 
+    position: relative;
+    font-size: 50px;
+    font-family: DomaineDisplay, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/*------------------------Stat page-------------------------*/
+
+/*------------------------Earn.HTML---------------------------------*/

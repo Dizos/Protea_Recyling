@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protea Recycling</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/31ac837446.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/protea recycling 1.png" class="logo" href="#">
+            <ul class="head-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#calc">Earn</a></li>
+                <li><a href="#Attention">How it works</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+  
+        <main>
+            <center><b><h3>Meet Protea</h3>
+                <h1>Make the most out of <br>Protea's Pfand system</h1>
+                <h3>Earn with the Protea recycling sytem that pays you for saving the world</h3></b> <br>
+                <a id="earn-button" href="ea" >Start earning</a></center>
+        </main>
+
+    </div>
+</div>
+<!-------------------CO2 counter------------>
+<div id="CO2">
+    <center><iframe title='Tons of CO2 emitted into the atmosphere' 
+        src='https://www.theworldcounts.com/embeds/counters/23?e&color=white&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=20'
+         style='border: none' height='100' width='400'></iframe></center>
+</div>
+
+<!------------Attention page------------->
+<div id="Attention">
+    <div class="container">
+        <h1 class="sub-title">Make a difference with Protea</h1>
+            <div class="attention-list">
+
+                <div class="box">
+                    <i class="fas fa-recycle"></i>
+                    <h2>Want to make money with protea recycling?</h2>
+                    <p class="att-words">Lets start off with what Protea Recycing is and what we stand for.
+                        <br>We are a company dedicated to cleaning South Africa and the world one can at a time,
+                         but not just that! we also want to empower many South Africans and help them make a few pennys on the side.
+                        <br>Lets discuss how we make you money. <br> We require you to scan the items you wish to recycle, 
+                        we give you an estimate on how much money you can expect to recieve and from there you make the decision weteher to call for a collection or drop off the material at the nearest loaction. 
+                    </p>
+                    <a href="#">Learn more</a>
+        
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-recycle"></i>
+                    <h2>Change the world<div id="change-world"></div</h2>
+                    <p class="att-words"><u>Reducing waste in landfills</u><br>
+                        Recycling reduces the amount of waste sent to landfills and incinerators. This helps decrease the release of harmful chemicals and greenhouse gases from these sites, reducing pollution and its impact on the environment.
+                        <br>
+                        <u>Conserving natural resources</u><br>
+                        Recycling helps conserve natural resources such as timber, water, and minerals.
+                        <br>
+                        <u>Saving energy</u><br>
+                        Manufacturing products from recycled materials typically requires less energy compared to producing them from new raw materials. 
+                        <u>Reducing greenhouse gas emissions</u><br>
+                        Recycling helps reduce greenhouse gas emissions that contribute to climate change. 
+                        <br>
+                        <u>Promoting sustainable Use of Materials</u><br>
+                        Recycling encourages the sustainable use of materials, fostering a circular economy where products are reused, remanufactured, and recycled continuously. 
+                        <br>
+                        <u>Protecting wildlife</u><br>
+                        By reducing the need to extract new raw materials, recycling helps preserve natural habitats and protects wildlife.
+                        <br>
+                        <u>Reducing pollution</u><br>
+                        Recycling decreases pollution by minimizing the need for waste disposal and reducing the extraction and processing of virgin materials.
+                        <br>
+                        <u>Economic benefits</u><br>
+                        Recycling can create jobs and generate economic benefits. The recycling industry supports millions of jobs worldwide in collection, processing, and selling recycled materials.
+                        
+                    </p>
+                    <a href="#">Learn more</a>
+        
+                </div>
+
+           
+            </div>
+           
+
+
+
+    </div>
+
+</div>
+
+<!------------C program(caculator)-->
+<div id="calc">
+    <div class="container2">
+        <h1 class="sub-title2">Earn with Protea</h1>
+        <div class="container3">
+        <div class="calc-list">
+
+            <div class="box2">
+                <h2>How much will you earn?</h2>
+                <p class="calc-words">Add whatever you plan on recycling to the counter and get an estimate on what you could be earning</p>
+                <div class="calculator">
+                    <!--------this is where the java script calc will go-->
+                </div>
+            </div>
+
+            <div class="box2">
+                <h2>How much of an impact are you making?</h2>
+                <p>This counter tells you how much of an impact you are</p>
+                <div class="calc-info">
+                    <!----------this is where the info linked to the calculator will go---->
+                    
+                </div>
+            </div>
+
+            <div class="box2">
+                <h2>What are we going to with your recled material?</h2>
+                <a>edit this info and add some info about what protea plans to use the recyling for, briefly</a>
+                <div class="rec-info">
+                    <!-------A brief Synopsis( make sure to make it clickable and make it take you to a part of the website that expalins in more detail.)-->
+                </div>
+
+
+            </div>
+
+        </div>
+            
+        </div>
+    </div>
+
+</div>
+
+<!----------------------------------Stat page--------------->
+<div>
+
+</div>
+
+<!------Scripts----------------------------------------------->
+
+<script>
+
+
+//script for the functionality of the design
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    
+    }
+    document.querySelectorAll('.attention-list .box').forEach(box => {
+            box.addEventListener('click', () => {
+                box.classList.toggle('expanded');
+            });
+        });
+ </script>
+</body>
+</html>
